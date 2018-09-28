@@ -1,0 +1,21 @@
+{
+  "name": "my-demo-package-alpha",
+  "version": "0.0.0",
+  "description": "Alpha is the first",
+  "author": "Someone who was here before you",
+  "license": "MIT",
+  "repository": "",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "scripts": {
+    "build": "rollup -c",
+    "prepare": "yarn run build"
+  },
+  "dependencies": {
+    "react": "*",
+    "prop-types": "*"
+  },
+  "files": [
+    "dist"
+  ]
+}

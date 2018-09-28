@@ -1,0 +1,36 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "start": "start-storybook -h 0.0.0.0 -p 9001 -c .storybook",
+    "bootstrap": "lerna bootstrap --use-workspaces",
+    "build": "lerna exec --parallel -- yarn run build",
+    "linkLerna": "lerna link --force-local"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^3",
+    "@storybook/addon-info": "^3",
+    "@storybook/addon-options": "^3",
+    "@storybook/addons": "^3",
+    "@storybook/react": "^3",
+    "babel-cli": "^6.26",
+    "babel-core": "^6.26",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "latest",
+    "babel-preset-stage-0": "latest",
+    "glob-loader": "^0.3.0",
+    "lerna": "^3.4.0",
+    "prop-types": "latest",
+    "react": "latest",
+    "react-dom": "^16.5.2",
+    "rollup": "^0.63.5",
+    "rollup-plugin-auto-external": "^2.0.0",
+    "rollup-plugin-babel": "^3",
+    "rollup-plugin-commonjs": "^9.1.8",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "storybook-addon-jsx": "latest"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
