@@ -1,5 +1,3 @@
-# Lerna démo partie 1
+# Lerna démo - Aller plus loin 1 - une config pour les gérer toutes
 
-Cette branche représente le projet jusqu'au chapitre "npm publish".
-
-C'est la config de base, la plus simple.
+Cette branche ajoute une config rollup centralisée.
