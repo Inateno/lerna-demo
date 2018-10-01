@@ -10,6 +10,11 @@ import commonjs from 'rollup-plugin-commonjs';
 import autoExternal from 'rollup-plugin-auto-external';
 import json from 'rollup-plugin-json';
 
+import postcss from 'rollup-plugin-postcss';
+import cssNext from 'postcss-cssnext';
+import cssReporter from 'postcss-reporter';
+import cssImport from "postcss-import";
+
 export default function generateConfig( optional ) {
   
   
@@ -27,6 +32,14 @@ export default function generateConfig( optional ) {
     ],
     external: optional.external || [],
     plugins: [
+      postcss({
+        // modules: true, // if true, create a css namespace => will add the name of the css file as prefix to all classname (ux-header became style_ux-header)
+        plugins: [
+          cssImport( { skipDuplicates: true } ),
+          cssNext(),
+          cssReporter()
+        ]
+      }),
       // say to rollup how to resolve node dependencies
       resolve(),
       // allow to load inlined json

@@ -8,6 +8,8 @@ import PropTypes from 'prop-types';
 
 import i18n from "i18next";
 
+import './style.css'
+
 import FR_LOCALES from "./locales/fr.json";
 import EN_LOCALES from "./locales/en.json";
 
@@ -37,7 +39,7 @@ export default class AlphaComponent extends Component {
     } = this.props;
 
     return (
-      <div ref="test">
+      <div className="alpha" ref="test">
         Alpha Component: {text}.<br />
         Localization: {i18n.t("namespace:key_of","i18n_error")}
       </div>
