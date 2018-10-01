@@ -5,7 +5,8 @@
     "start": "start-storybook -h 0.0.0.0 -p 9001 -c .storybook",
     "bootstrap": "lerna bootstrap --use-workspaces",
     "build": "lerna exec --parallel -- yarn run build",
-    "linkLerna": "lerna link --force-local"
+    "linkLerna": "lerna link --force-local",
+    "publish": "lerna publish"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3",
