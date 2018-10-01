@@ -13,7 +13,8 @@
   },
   "dependencies": {
     "react": "*",
-    "prop-types": "*"
+    "prop-types": "*",
+    "i18next": "*"
   },
   "files": [
     "dist"

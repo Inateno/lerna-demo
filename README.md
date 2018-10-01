@@ -1,3 +1,3 @@
-# Lerna démo - Aller plus loin 1 - une config pour les gérer toutes
+# Lerna démo - Aller plus loin 2 - embarquer du json tu pourras (traductions)
 
-Cette branche ajoute une config rollup centralisée.
+Cette branche ajoute du json dans notre package, que l'on charge dans i18next.
